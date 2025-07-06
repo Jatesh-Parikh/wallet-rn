@@ -1,0 +1,108 @@
+import { StyleSheet } from "react-native";
+import { coffeeTheme } from "../../constants/colors";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: coffeeTheme.background,
+    padding: 20,
+    justifyContent: "center",
+  },
+  illustration: {
+    height: 310,
+    width: 300,
+    resizeMode: "contain",
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "bold",
+    color: coffeeTheme.text,
+    marginVertical: 15,
+    textAlign: "center",
+  },
+  input: {
+    backgroundColor: coffeeTheme.white,
+    borderRadius: 12,
+    padding: 15,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: coffeeTheme.border,
+    fontSize: 16,
+    color: coffeeTheme.text,
+  },
+  errorInput: {
+    borderColor: coffeeTheme.expense,
+  },
+  button: {
+    backgroundColor: coffeeTheme.primary,
+    borderRadius: 12,
+    padding: 16,
+    alignItems: "center",
+    marginTop: 10,
+    marginBottom: 20,
+  },
+  buttonText: {
+    color: coffeeTheme.white,
+    fontSize: 18,
+    fontWeight: 600,
+  },
+  footerContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 8,
+  },
+  footerText: {
+    color: coffeeTheme.text,
+    fontSize: 16,
+  },
+  linkText: {
+    color: coffeeTheme.primary,
+    fontSize: 16,
+    fontWeight: 600,
+  },
+  verificationContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: coffeeTheme.background,
+    padding: 20,
+  },
+  verificationTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: coffeeTheme.text,
+    marginBottom: 20,
+    textAlign: "center",
+  },
+  verificationInput: {
+    backgroundColor: coffeeTheme.white,
+    borderRadius: 12,
+    padding: 15,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: coffeeTheme.border,
+    fontSize: 16,
+    color: coffeeTheme.text,
+    width: "100%",
+    textAlign: "center",
+    letterSpacing: 2,
+  },
+  errorBox: {
+    backgroundColor: "#ffe5e5",
+    padding: 12,
+    borderRadius: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: coffeeTheme.expense,
+    marginBottom: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+  },
+  errorText: {
+    color: coffeeTheme.text,
+    flex: 1,
+    marginLeft: 8,
+    fontSize: 14,
+  },
+});
