@@ -16,7 +16,17 @@ const NoTransactionsFound = () => {
         style={styles.emptyStateIcon}
       />
       <Text style={styles.emptyStateTitle}>No Transactions yet.</Text>
-      <Text style={styles.emptyStateText}>
+      <Text
+        style={{
+          color: coffeeTheme.primary,
+          fontSize: 14,
+          textAlign: "center",
+          lineHeight: 20,
+          alignItems: "center",
+          justifyContent: "center",
+          marginVertical: 20,
+        }}
+      >
         Start tracking your finances by adding your first transaction.
       </Text>
       <TouchableOpacity

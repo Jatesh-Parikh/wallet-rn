@@ -54,14 +54,14 @@ const createScreen = () => {
       const response = await fetch(`${API_URL}/transactions`, {
         method: "POST",
         headers: {
-          "Content-Type": "application-json",
+          "Content-Type": "application/json",
         },
-        body: {
+        body: JSON.stringify({
           userId: user.id,
           title,
           amount: formattedAmount,
           category: selectedCategory,
-        },
+        }),
       });
 
       if (!response.ok) {

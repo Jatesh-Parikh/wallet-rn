@@ -34,6 +34,7 @@ export default function Page() {
       if (err.errors?.[0]?.code === "form_password_incorrect") {
         setError("Password is incorrect. Please try again.");
       } else {
+        console.log(err);
         setError("An error occurred. Please try again.");
       }
     }
