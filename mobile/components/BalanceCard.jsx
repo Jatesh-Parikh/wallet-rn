@@ -3,7 +3,6 @@ import { styles } from "../assets/styles/home.styles.js";
 import { coffeeTheme } from "../constants/colors.js";
 
 export const BalanceCard = ({ summary }) => {
-  console.log(summary);
   return (
     <View style={styles.balanceCard}>
       <Text style={styles.balanceTitle}>Total Balance</Text>
